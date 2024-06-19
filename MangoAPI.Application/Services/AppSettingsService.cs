@@ -10,6 +10,8 @@ public static class AppSettingsService
 
     public static string GetAppSettingsPath()
     {
+        var a = _appSettingsPath;
+        Console.Write(a);
         var path = Path.Combine(AppContext.BaseDirectory, AppSettingsPath);
         return path;
     }
